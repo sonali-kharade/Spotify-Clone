@@ -1,0 +1,589 @@
+body{
+    /* or * */
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+background-color: black;
+color: white;
+overflow: hidden;
+/* hiddenne ne sagli website scroll hot nahi .
+if specific part la overflow- scroll kel ki tech scroll hot*/
+}
+.main{
+    display: flex;
+}
+
+.sidebar{
+   
+    width: 340px;
+    border-radius: 1rem; /* 1rem-60px*/
+    background-color:black ;
+}
+
+
+   
+.main{
+    height: 100vh;
+}
+.nav{
+    background-color:#121212 ;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem ;
+    margin: 0.5rem;
+   
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding:0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+   
+
+
+}
+.nav-option a{
+    font-size: 0.87rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    font-weight: 700;
+   
+}
+.nav2{
+    background-color:#121212 ;
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0.5rem;
+    /* display: flex;
+    justify-content: baseline;
+    justify-content: space-between;
+    line-height: 2.5rem; */
+    padding:0.5rem 1rem;
+  
+}
+.first{
+    display: flex;
+    justify-content: baseline;
+    justify-content: space-between;
+    line-height: 2.5rem;
+    
+}
+    
+.library{
+    opacity: 0.7;
+}
+.library:hover{
+    opacity: 1;
+}
+.plus{
+   
+    display: flex;
+    justify-content: space-around;
+}
+.plus i{
+    opacity: 0.6;
+    padding: 0.60rem;
+}
+.plus i:hover{
+    opacity: 1;
+}
+
+.plus img{
+    width: 1.2rem;
+    
+}
+
+.library img{
+    width: 1.2rem;
+    
+}
+
+.library a{
+    font-size: 0.87rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    font-weight: 700;
+   
+}
+
+
+.box .subBox{
+  
+    border-radius:0.70rem  ;
+    background-color:#1e1e1e ;
+    margin-bottom: 0.80rem;
+    margin-top: 0.50rem;
+    height: 113px;
+
+}
+.box .subBox h5{
+    font-weight: bold;
+    padding:1rem 0 0 1rem ;
+}
+.box .subBox p{
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding:0 0 0 1rem ;
+    position: relative;
+    bottom: 10px;
+
+}
+ .badge{
+   background-color: white;
+   border: none;
+   border-radius: 100px;
+   padding: 0.25rem 0.70rem;
+   font-weight: 500;
+   height:1.70rem ;
+   margin-left: 1rem;
+   position: relative;
+   bottom: 0.30rem;
+    width: fit-content;
+    font-size: 0.70rem;
+   
+}
+.badge1{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.40rem 0.90rem;
+    font-weight:700;
+    height:1.90rem ;
+    width: fit-content;
+     font-size: 0.70rem;
+    
+ }
+.badge2{
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.40rem 0.90rem;
+    font-weight:700;
+    height:1.90rem ;
+    width: fit-content;
+    font-size: 0.70rem;
+    margin-left: 0.30rem;
+}
+ .badge:hover{
+    transform: scale(1.1);
+    
+}
+.badge1:hover{
+    transform: scale(1.1);
+}
+.badge2:hover{
+    transform: scale(1.1);
+   
+}
+/* main content */
+ .main-content{
+        background-color:#131212 ;
+        flex: 1;
+        border-radius: 1rem;
+        overflow: auto;
+        padding: 0 1.5rem 0 1.1rem;
+    }
+    
+
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    height: 2rem;
+    background-color:#131212 ;
+    z-index:10;
+    /* z-index: defines the order of overlapping HTML elements.  */
+  
+   
+}
+
+.ForBackIcons img{
+    height: 1.10rem;
+    /* width: 1.10rem; */
+    border-radius: 50%;
+    background-color:rgb(11, 11, 11);
+    padding: 0.40rem;
+    margin-left: 0.30rem;
+    opacity: 0.7;
+}
+.buttUser1 .userI{
+    height: 0.60rem;
+    width: 0.60rem;
+    border-radius: 50%;
+    background-color:rgb(11, 11, 11);
+    padding: 0.40rem;
+    margin-left: 0.30rem;
+}
+@media (max-width:1000px){
+    #hide{
+        display: none;
+       
+    }
+}
+
+.card{
+    background-color: #191919;
+    width: 130px;
+    border-radius: 0.5rem;
+    padding: 0.90rem;
+    /* height: auto; */
+    margin: 1rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card-img{
+    width: 130px;
+    border-radius: 0.5rem;
+  
+}
+.card .card-title{
+    font-weight: bold;
+    font-size: 0.88rem;
+}
+.card .card-info{
+    /* font-weight: 200;
+   
+    font-size: 0.70rem;
+    opacity: 0.7;
+    */
+    line-height: 17px;
+    font-size: 0.65rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.card-text{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.card-text a{
+    color: white;
+    text-decoration: none;
+    /* position: relative;
+    top: 1.75rem; */
+    display: flex;
+    align-items: center;
+}
+.card-text a:hover{
+    text-decoration: underline;
+    
+}
+
+/* .footerNav{
+    height:17rem;
+    width: 100%;
+    background-color: green;
+    
+} */
+
+.footerText{
+    display: flex;
+    flex-direction: column;
+}
+.footerNavSub a{
+    text-decoration: none;
+    color: white;
+    opacity:0.7 ;
+    font-size: 0.85rem;
+    line-height: 2rem;
+    font-weight:500;
+  position: relative;
+  bottom: 1rem;
+}
+.footerNavSub a:hover{
+  opacity: 1;
+}
+.footerNavSub{
+    display: flex;
+   
+}
+.footerNavSub{
+   display: flex;
+   width: 60%;
+   justify-content: space-between;
+}
+.footerNavSub2{
+    display: flex;
+   /* right: 2rem;position: relative; */
+   
+   
+}
+.footerNavSub2 i{
+    height: 1.10rem;
+    width: 1.10rem;
+    border-radius: 50%;
+    background-color:#1e1e1e ;
+    padding: 0.70rem;
+     margin-left: 0.50rem;
+    /* margin: 0.40rem;  */
+    
+    /* margin-bottom:2rem ; */
+    
+   
+}
+.footerNavSub2 i:hover{
+    background-color:#4b4a4a ;
+   
+}
+
+.footerNav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-content-footer{
+    /* margin-bottom: 4rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin:1rem;
+    /* align-items: center; */
+
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.line2{
+    width: 40%;
+}
+.line1 a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    
+    margin: 0.70rem;
+    font-size: 0.75rem;
+   
+    font-weight:500;
+
+}
+.line2 a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+   
+    margin: 0.70rem;
+    font-size: 0.75rem;
+   
+    font-weight:500;
+}
+.row{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rowsub{
+    width: 95%;
+    height: 20%;
+    opacity: 0.2;
+    border-top: 1px solid white;
+}
+
+/* music player */
+.music-player{
+    background-color:black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+
+}
+.music-player .A{
+    width:35%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem
+   
+
+}
+.music-player .A i{
+    margin: 0.50rem;
+    opacity: 0.6;
+    position: relative;
+    top: 0.80rem;
+}
+.music-player .A i:hover{
+    opacity: 1;
+}
+
+.B .B1{
+    display: flex;
+    /* justify-content: space-evenly; */
+   justify-content: center;
+    
+}
+
+ .B1 #musicI{
+    height: 2rem;
+    margin:0.70rem 0.3rem 0.3rem 0.3rem ;
+    position: relative;
+    top: 0.20rem;
+    opacity: 0.6;
+}
+.B1 #musicI:hover{
+    opacity: 1;
+}
+ .B1 .musicI2{
+    height: 0.90rem;
+    margin: 0.80rem;
+    opacity: 0.5;
+    position: relative;
+    top: 0.80rem;
+}
+ .B1 .musicI2:hover{
+    opacity: 1;
+}
+
+.vaathitext{
+    margin: 0.30rem;
+
+    
+}
+.vaathitext h5{
+    /* font-size: 1rem; */
+    position: relative;
+    bottom: 1rem;
+}
+.vaathitext p{
+    font-size: 0.70rem;
+    position: relative;
+    bottom: 1.60rem;
+}
+
+.music-player .B{
+    width:35%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    
+}
+.B .B2{
+    display: flex;
+    align-items: center;
+}
+.B2 input{
+    width: 90%;
+    /* height: 2px; */
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+   
+}
+.B2 input::-webkit-slider-runnable-track{
+   background-color: #ddd;
+   border-radius: 100px;
+   height: 0.2rem;
+   
+}
+.B2 input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+
+}
+.B2 p{
+    font-size: 0.60rem;
+}
+
+
+.music-player .C{
+    width:30%;
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+}
+.C .small{
+    height: 2.6rem;
+    margin: 0.20rem;
+}
+.C .medium{
+    height: 1.70rem;
+    margin: 0.20rem;
+}
+.C .big{
+  height: 1.25rem;
+  margin: 0.20rem;
+}
+.C input{
+    /* height: 3px; */
+    
+   appearance: none;
+   background-color:transparent ;
+   cursor: pointer;
+
+}
+.C input::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.35rem;
+    width: 0.35rem;
+
+}
+.C input::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.60rem;
+    width: 0.60rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -2px;
+    
+}
+
+@media (max-width:1000px){
+    .music-player .C{
+        display: none;
+    }
+    .music-player .B .B2{
+        display: none;
+    }
+    .music-player .B .B1 .musicI2{
+        display: none;
+    }
+    .music-player .B .B1 #musicI{
+       position: absolute;
+       right: 1rem;
+    }
+    .music-player .A .camera{
+        display: none;
+    }
+    .music-player .A .heart{
+       font-size: 1.40rem;
+        position: absolute;
+        right: 4rem;
+    }
+
+}
